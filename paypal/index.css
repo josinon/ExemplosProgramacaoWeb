@@ -1,0 +1,184 @@
+body{
+	font-family: sans-serif;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+
+form input[type="search"]{
+	border-radius: 5px;
+	border: 1px solid gray;
+	background-image: url('img/search-icon.png');
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position: 5px 2px; /* define a posição a do icone  (left, top) */
+	padding-left: 25px; /* aumenta o espaçamento para que o texto não se sobreponha ao icone*/ 
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+
+/* Inicio da estilização da lista de links */
+.links{
+	display: flex;
+	flex-direction: row wrap;
+	justify-content: flex-end;
+	font-size: 12px;
+}
+
+.links a {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.links a:nth-child(1){
+	padding-left: 0px;
+}
+
+.links a:nth-child(2){
+	border-left: 2px solid gray;
+	border-right: 2px solid gray;
+}
+
+.links a:nth-child(4){
+	border-left: 2px solid gray;
+}
+
+/* Fim da estilização da lista de links */
+
+section{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.content{
+	border-radius: 10px;
+	border: 2px solid #efefef;
+	width: 100%;
+	min-height: 430px;
+}
+
+.content > h3 {
+	color: orange;
+	margin-left: 20px;
+}
+
+.submenu {
+	border-radius: 5px;
+	border: 2px solid #efefef;
+	padding: 5px;
+	position: relative;
+	top: -3px;
+	margin-left: -1px;
+}
+
+.submenu > a {
+	margin-left: 20px;
+	margin-right: 15px;
+}
+
+tr:nth-child(even){
+	background-color: #efefef;
+}
+
+table{
+	width: 97%;
+	margin-left: 20px;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 10px;
+	text-align: center;
+	border: 1px solid gray;
+}
+
+.nav-tabs{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none; 
+}
+
+.nav-tabs li {
+	margin-right: 30px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.caption{
+	margin-left: 20px;
+	margin-right: 18px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: row;
+}
+
+.col-1{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 83%;
+	padding: 5px;
+	padding-right: 30px;
+}
+
+.col-2{
+	margin: auto;
+}
+
+.filters{
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.balance {
+	border: 1px solid black;
+	margin: 20px;
+	width: 10%;
+	text-align: center; 
+	border-radius: 5px;
+}
+
+.balance div:nth-child(1){
+	background-color: #1000a0;
+	color: white;
+	font-weight: bold;
+
+}
+
+.balance div{
+	padding: 5px;
+
+}
+
+.history{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.history-menu{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-right: 20px;
+}
+
+.history-menu > * {
+	padding-bottom: 10px;
+}
+
+span{
+	vertical-align:sub;
+	font-size: 9px;
+}

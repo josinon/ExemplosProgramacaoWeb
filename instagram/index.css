@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Billabong;
+    src: url(font/Billabong.ttf);
+}
+
+.center{
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+}
+
+body{
+	margin: 0px;
+}
+
+header {
+	background-color: #4c00aa; /* define a cor de funda da barra de cabeçalho*/
+	height: 50px; /* define a altura da barra de cabeçalho */
+	display: flex; /* Utiliza flexbox para alinha todas as divs nessa */
+	flex-direction: row; /* alinha as divs horizontalmente */
+	justify-content: space-between; /* justifica as divs para ter um espaço entre elas*/
+	padding-right: 100px; 
+	padding-left: 100px;
+	color: white;
+}
+
+
+#icon-home img{
+	height: 30px;
+	width: 30px;
+}
+
+
+
+#title{
+	font-family: 'Billabong';
+	margin: auto;
+	font-size: 40px;
+}
+
+#user{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: 15%;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+}
+
+article {
+	background-color: #d8d4dd;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+
+}
+
+#timeline {
+	background-color: #9d9aa0;
+	width: 600px;
+	height: 600px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	padding: 2%;
+}
+
+.shadow {
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.bordas{
+	border: 1px solid gray;
+}
+
+a {
+	color: #390072;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 17px;
+}
+.likes{
+	background-color: white;
+	display: flex;
+}
+
+.like-icon{
+	width: 7%;
+	vertical-align: middle;	
+}
+
+.like-icon img{
+	display: flex;
+	margin: auto;
+}
+.curtidas{
+	width: 86%;
+}
+
+.comentarios{
+	background-color: white;
+	display: inline-flex;
+}
+
+.post-time{
+	align-self: flex-start;
+	display: flex;
+	margin-top: 30px;
+	margin-left: -171px;
+}

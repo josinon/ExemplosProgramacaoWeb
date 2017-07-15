@@ -1,0 +1,51 @@
+.tabs {
+
+  list-style: none;
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  line-height: 24px;
+}
+.tabs li {
+  margin: 0px;
+  padding: 0 5px;
+  border: 1px solid #AAA;
+  background: #ECECEC;
+  display: inline-block;
+}
+
+.tabs li.selected {
+  background: #FFF;
+  color: #000;
+}
+
+
+.tabs li:before,
+.tabs li:after {
+  position: absolute;
+  bottom: -1px;
+  width: 6px;
+  height: 6px;
+}
+.tabs li:before {
+  left: -6px;
+}
+.tabs li:after {
+  right: -6px;
+}
+.tabs li:after, .tabs li:before {
+  border: 1px solid #AAA;
+}
+
+.tabs li {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.tabs li:before {
+  border-bottom-right-radius: 6px;
+  border-width: 0 1px 1px 0;
+}
+.tabs li:after {
+  border-bottom-left-radius: 6px;
+  border-width: 0 0 1px 1px;
+}
